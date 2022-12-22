@@ -29,7 +29,7 @@ class TestBlueprintOCI(TransactionTestCase):
                 BlueprintInstance(
                     path="https://ghcr.io/goauthentik/blueprints/test:latest"
                 ).retrieve_oci(),
-                "foo",
+                ["foo"],
             )
 
     def test_manifests_error(self):
